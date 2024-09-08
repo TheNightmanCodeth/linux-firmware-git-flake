@@ -10,7 +10,7 @@
   };
 
   outputs = { self, nixpkgs, linux-firmware-gitlab }: {
-    defaultPackage."aarch64-linux" = nixpkgs.legacyPackages."aarch64-linux".stdenvNoCC.mkDerivation rec {
+    nixosModules.default = nixpkgs.legacyPackages."aarch64-linux".stdenvNoCC.mkDerivation rec {
       pname = "linux-firmware";
       version = "20240908";
 
