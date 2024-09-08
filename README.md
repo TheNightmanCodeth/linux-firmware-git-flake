@@ -1,6 +1,9 @@
-# Nix flake providing main branch of gitlab:kernel-firmware/linux-firmware/main
+# Work In Progress
 
-This can be used as an overlay in your main flake
+This is not ready yet, it only works for `aarch64-linux` systems. 
+That's probably the only systems that would find value in this anyway since there seems to be new progress made every day on those machines.
+
+If you're on an aarch64 system, this can be used as an overlay in your system configuration
 
 ``` nix
 { 
@@ -11,17 +14,22 @@ This can be used as an overlay in your main flake
     };
 
     outputs = { self, nixpkgs, linux-firmware-git }: {
-        nixpkgs.overlays = [
-            (final: prev: {
-                linux-firmware = linux-firmware-git;
-            })
-        ];
-        
-        # The rest of your config...
-    };
+        nixosConfigurations = {
+            your-host = nixpkgs.lib.nixosSystem {
+                inherit system;
+                modules = [
+                    ...
+                    ({ ... }: {
+                        nixpkgs.overlays = [
+                            (final: prev: {
+                                linux-firmware = linux-firmware-git.nixosModules.default;
+                            })
+                        ];
+                        ...
+                    })
+                ];
+            };
+        };
+    }
 }
 ```
-
-# Work In Progress
-
-This is not ready yet, it only works for `aarch64-linux` installs until I confirm it works at all.
