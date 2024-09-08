@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "linux-firmware-gitlab": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725469974,
+        "narHash": "sha256-KH7W5zJlHswaGL+rXd1Uql40s5hQUfjVl3aKkwyHVcI=",
+        "owner": "kernel-firmware",
+        "repo": "linux-firmware",
+        "rev": "87cae274d38e69f6e9461f966fe42d223e20d7be",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "kernel-firmware",
+        "ref": "main",
+        "repo": "linux-firmware",
+        "type": "gitlab"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1725634671,
+        "narHash": "sha256-v3rIhsJBOMLR8e/RNWxr828tB+WywYIoajrZKFM+0Gg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "574d1eac1c200690e27b8eb4e24887f8df7ac27c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "linux-firmware-gitlab": "linux-firmware-gitlab",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
