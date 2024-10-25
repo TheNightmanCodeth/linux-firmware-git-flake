@@ -3,11 +3,11 @@
     "linux-firmware-gitlab": {
       "flake": false,
       "locked": {
-        "lastModified": 1728076324,
-        "narHash": "sha256-xB1K9rjtCtC/zR0v9HQ08IPD3vPNvTPcIkwujYBBGMw=",
+        "lastModified": 1729608656,
+        "narHash": "sha256-MZxhnvGbb6r3N+7zhFviHpfaqcXhWYDMA6296fYYrwc=",
         "owner": "kernel-firmware",
         "repo": "linux-firmware",
-        "rev": "919f79f9fb5536c1928a15ac82a2e53183b213cf",
+        "rev": "e1d95775eb3db64ab3740701bf9682e5856aab2e",
         "type": "gitlab"
       },
       "original": {
@@ -19,11 +19,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1728018373,
-        "narHash": "sha256-NOiTvBbRLIOe5F6RbHaAh6++BNjsb149fGZd1T4+KBg=",
+        "lastModified": 1729665710,
+        "narHash": "sha256-AlcmCXJZPIlO5dmFzV3V2XF6x/OpNWUV8Y/FMPGd8Z4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "bc947f541ae55e999ffdb4013441347d83b00feb",
+        "rev": "2768c7d042a37de65bb1b5b3268fc987e534c49d",
         "type": "github"
       },
       "original": {
